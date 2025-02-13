@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycle Shop - Your Bicycle Destination</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            padding: 40px;
+        }
+
+        .products {
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .price {
+            color: #2ecc71;
+            font-size: 24px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cycle Shop</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h2>Welcome to Cycle Shop</h2>
+            <p>Your destination for premium bicycles</p>
+            <button class="btn" onclick="location.href='#shop'">Shop Now</button>
+        </div>
+    </div>
+
+    <section class="products" id="shop">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Mountain Bike">
+            <h3>Mountain Bike Pro</h3>
+            <p>Premium mountain bike for all terrains</p>
+            <div class="price">$599.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Road Bike">
+            <h3>Road Bike Elite</h3>
+            <p>Lightweight road bike for speed enthusiasts</p>
+            <div class="price">$799.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Hybrid Bike">
+            <h3>Hybrid City Bike</h3>
+            <p>Perfect combination of comfort and style</p>
+            <div class="price">$449.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact us: info@cycleshop.com | Phone: (555) 123-4567</p>
+        <p>Address: 123 Cycle Street, Bike City, BC 45678</p>
+        <p>&copy; 2023 Cycle Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
